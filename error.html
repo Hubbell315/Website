@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error!</title>
+    <link rel="stylesheet" href="Homepagedesign.css">
+    <style>
+        /* Basic styling for the error page */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .message-container {
+            background: var(--second-bg-color);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2); /* Red shadow for error */
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 4rem;
+            color: #ff0000; /* Red color for error */
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.8rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .btn-back {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #ff0000; /* Red button for error */
+            border-radius: 40px;
+            font-size: 1.6rem;
+            color: var(--second-bg-color);
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            transition: .5s ease;
+            text-decoration: none;
+        }
+        .btn-back:hover {
+            background: var(--text-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 20px #ff0000; /* Red shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>Oops! Something Went Wrong.</h1>
+        <p>There was an issue sending your message. Please try again later or contact me directly via my social media links.</p>
+        <a href="index.html" class="btn-back">Go Back to Home</a>
+    </div>
+</body>
+</html>
