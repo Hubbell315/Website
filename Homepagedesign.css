@@ -21,6 +21,10 @@ html {
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--bg-color);
     color: var(--text-color);
