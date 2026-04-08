@@ -9,170 +9,172 @@
 </head>
 <body>
 
-    <header class="header">
-        <a href="#home" class="logo">Tyler<span> Hubbell</span></a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<header class="header">
+    <a href="#home" class="logo">Tyler<span> Hubbell</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <!-- HOME -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, it's <span>Tyler</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
+<!-- HOME -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi, it's <span>Tyler</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
 
-            <p>
-                I’m a software engineering student focused on building practical applications,
-                AI-powered tools, and user-centered software that solves real problems.
-            </p>
+        <p>
+            Building AI-powered applications and real-world software solutions focused on usability, performance, and scalability.
+        </p>
 
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/tyler-h-5b65b6346/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Hubbell315" target="_blank"><i class='bx bxl-github'></i></a>
-            </div>
-
-            <div class="btn-group">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn">Contact</a>
-            </div>
-
-            <!-- EDUCATION PREVIEW (MOVED UP) -->
-            <div class="education-preview">
-                <div class="timeline-content">
-                    <h3>Southern New Hampshire University</h3>
-                    <p>B.S. in Computer Science, Software Engineering Concentration</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="home-img">
-            <img src="Images/Coding.jpg" alt="Tyler Hubbell portfolio image" />
-        </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services" id="services">
-        <h2 class="heading">Services</h2>
-
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI / UX Design</h4>
-                    <p>Designing clean, user-focused interfaces that improve usability and user experience.</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Software Development</h4>
-                    <p>Building desktop, web, and mobile applications with a focus on performance and usability.</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Testing</h4>
-                    <p>Improving software by validating edge cases, refining workflows, and ensuring reliability.</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <a href="#contact" style="text-decoration: none; color: inherit;">
-                        <h4>Contact</h4>
-                        <p>Interested in working together? Click here to get in touch.</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="services" id="projects">
-        <h2 class="heading">My <span>Projects</span></h2>
-
-        <div class="services-container">
-
-            <!-- GREENPEAKS -->
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>GreenPeaks</h4>
-                    <p>
-                        An AI-powered plant identification app built as a full-stack project.
-                        Currently in alpha testing for iOS.
-                    </p>
-
-                    <a href="https://testflight.apple.com/join/7TGMgXuf" target="_blank" class="btn">
-                        Join iOS Alpha Test
-                    </a>
-
-                    <p><i>Android version coming soon.</i></p>
-                </div>
-            </div>
-
-            <!-- BLACKJACK -->
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Blackjack True Count Application</h4>
-                    <p>
-                        A Java desktop application for tracking blackjack true count values.
-                    </p>
-
-                    <a href="/apps/Blackjack.exe" download class="btn">
-                        Download App (Windows)
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form id="contactForm" onsubmit="sendEmail(event)">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" id="full_name" required>
-                    <input type="email" placeholder="Email Address" id="email_address" required>
-                </div>
-
-                <div class="input-box">
-                    <input type="text" placeholder="Phone Number" id="phone_number">
-                    <input type="text" placeholder="Subject" id="subject" required>
-                </div>
-            </div>
-
-            <div class="input-group-2">
-                <textarea id="message" cols="30" rows="10" placeholder="Your Message Here" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="social">
+        <div class="social-icons">
             <a href="https://www.linkedin.com/in/tyler-h-5b65b6346/" target="_blank"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/Hubbell315" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
 
-        <ul class="list">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="btn-group">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
 
-        <p class="copyright">© 2026 Tyler Hubbell. All rights reserved.</p>
-    </footer>
+        <!-- EDUCATION -->
+        <div class="education-preview">
+            <div class="timeline-content">
+                <h3>Southern New Hampshire University</h3>
+                <p>B.S. in Computer Science, Software Engineering Concentration</p>
+            </div>
 
-    <script src="script.js"></script>
+            <!-- Resume Button -->
+            <a href="/resume.pdf" class="btn resume-btn">Download Resume</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="home-img">
+        <img src="Images/Coding.jpg" alt="Tyler Hubbell portfolio image" />
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <h2 class="heading">Services</h2>
+
+    <div class="services-container">
+        <div class="service-box">
+            <div class="service-info">
+                <h4>UI / UX Design</h4>
+                <p>Designing clean, user-focused interfaces that improve usability and user experience.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <h4>Software Development</h4>
+                <p>Developing scalable web, mobile, and desktop applications.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <h4>Testing</h4>
+                <p>Validating edge cases and refining workflows to improve software reliability.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <a href="#contact" style="text-decoration: none; color: inherit;">
+                    <h4>Contact</h4>
+                    <p>Interested in working together? Click here to get in touch.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="services" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="services-container">
+
+        <!-- GREENPEAKS -->
+        <div class="service-box">
+            <div class="service-info">
+                <h4>GreenPeaks</h4>
+                <p>
+                    An AI-powered plant identification app that uses machine learning to recognize plants from real-world images.
+                    Built as a full-stack system with a focus on performance, accuracy, and user experience.
+                </p>
+
+                <a href="https://testflight.apple.com/join/7TGMgXuf" target="_blank" class="btn">
+                    Join iOS Alpha Test
+                </a>
+
+                <p><i>Android version coming soon.</i></p>
+            </div>
+        </div>
+
+        <!-- BLACKJACK -->
+        <div class="service-box">
+            <div class="service-info">
+                <h4>Blackjack True Count Application</h4>
+                <p>
+                    A Java desktop application designed to calculate and track blackjack true count values efficiently.
+                </p>
+
+                <a href="/apps/Blackjack.exe" download class="btn">
+                    Download App (Windows)
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form id="contactForm" onsubmit="sendEmail(event)">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" id="full_name" required>
+                <input type="email" placeholder="Email Address" id="email_address" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Phone Number" id="phone_number">
+                <input type="text" placeholder="Subject" id="subject" required>
+            </div>
+        </div>
+
+        <div class="input-group-2">
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message Here" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="social">
+        <a href="https://www.linkedin.com/in/tyler-h-5b65b6346/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/Hubbell315" target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
+
+    <ul class="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p class="copyright">© 2026 Tyler Hubbell. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
