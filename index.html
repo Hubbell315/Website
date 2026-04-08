@@ -8,230 +8,171 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
+
     <header class="header">
         <a href="#home" class="logo">Tyler<span> Hubbell</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
             <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
+    <!-- HOME -->
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, it's <span>Tyler</span></h1>
-            <h3 class="text-animation"> I'm a <span></span></h3>
-            <p>My goal is to create an autonomous
-                world where technology can enhance human life. </p>
+            <h3 class="text-animation">I'm a <span></span></h3>
+
+            <p>
+                I’m a software engineering student focused on building practical applications,
+                AI-powered tools, and user-centered software that solves real problems.
+            </p>
 
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/tyler-h-5b65b6346/" target ="_blank"><i class = 'bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Hubbell315" target = "_blank"><i class = 'bx bxl-github'></i></a>
-                
+                <a href="https://www.linkedin.com/in/tyler-h-5b65b6346/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Hubbell315" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
+                <a href="#projects" class="btn">View Projects</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
+
+            <!-- EDUCATION PREVIEW (MOVED UP) -->
+            <div class="education-preview">
+                <div class="timeline-content">
+                    <h3>Southern New Hampshire University</h3>
+                    <p>B.S. in Computer Science, Software Engineering Concentration</p>
+                </div>
+            </div>
         </div>
+
         <div class="home-img">
-            <img src="Images/Coding.jpg" alt="professional" />
+            <img src="Images/Coding.jpg" alt="Tyler Hubbell portfolio image" />
         </div>
     </section>
 
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
 
-    <section class = "education" id = "education">
-        <h2 class = "heading">Education</h2>
-
-        <div class = "timeline-item">
-            <div class = "timeline-dot"> </div>
-                <div class = "timeline-date">2019
-                </div>
-                <div class = "timeline-content">
-                    <h3> Onondaga Community College</h3>
-                    <p>Graduated with Associate of Arts</p>
-                </div>
-            
-        
-            
-        </div>
-        <div class = "timeline-item">
-            <div class = "timeline-dot"> </div>
-                <div class = "timeline-date">2026
-                </div>
-                <div class = "timeline-content">
-                    <h3> Southern New Hampshire University</h3>
-                    <p>B.S in Computer Science With Software Engineering Concentration</p>
-                </div>
-            
-        </div>
-
-
-    </section> 
-    
-    <section class = "services" id= "services">
-        <h2 class = "heading">Services</h2>
-
-        <div class = "services-container">
-            <div class = "service-box">
-                <div class = "service-info">
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
                     <h4>UI / UX Design</h4>
-                    <p>Creating visually pleasing UI / UX for comapnies to use in there daily business needs</p>
+                    <p>Designing clean, user-focused interfaces that improve usability and user experience.</p>
                 </div>
             </div>
 
-            <div class = "service-box">
-                <div class = "service-info">
-                    <h4> Software Developer</h4>
-                    <p>Creating Desktop Applications such as blackjack counter apps, World of Eldarath</p>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Software Development</h4>
+                    <p>Building desktop, web, and mobile applications with a focus on performance and usability.</p>
                 </div>
             </div>
-            <div class = "service-box">
-                <div class = "service-info">
-                    <h4> Testing</h4>
-                    <p>Testing every case edge for the requirements at hand</p>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Testing</h4>
+                    <p>Improving software by validating edge cases, refining workflows, and ensuring reliability.</p>
                 </div>
             </div>
-            <div class = "service-box">
-                <div class = "service-info">
-                    <a href = "#contact" style = "text-decoration: none; color: inherit;">
-                    <h4> Contact</h4>
-                    <p>Click here to contact</p>
-                </div>
-                </a>
-            </div>
-        </section>
 
-        <section class="services" id="projects"> <h2 class="heading">My <span>Projects</span></h2>
-
-    <div class="services-container">
-        <div class="service-box">
-            <div class="service-info">
-                <h4>Blackjack True Count Application</h4>
-                <p>This is a standalone desktop application built with Java. It's designed to run on Windows operating systems and does not require a separate Java installation.</p>
-                <a href="/apps/Blackjack.exe" download class="btn" style="margin-top: 2rem;">Download App (Windows)</a>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="how-to-run" style="
-        background: var(--bg-color);
-        border: 3px solid var(--main-color);
-        border-radius: 2rem;
-        padding: 3rem;
-        margin-top: 5rem;
-        text-align: center;
-        box-shadow: 0 0 15px var(--main-color);
-        color: var(--text-color);
-        font-size: 1.6rem;
-    ">
-        <h3 style="color: var(--main-color); font-size: 2.5rem; margin-bottom: 1.5rem;">How to Use Your Downloaded App:</h3>
-        <p style="margin-bottom: 1rem;">1. Click the "Download App (Windows)" button above.</p>
-                <p style="margin-bottom: 1rem;">2. Download will report suspicious file, click "download suspicious file" anyway. </p>
-        <p style="margin-bottom: 1rem;">3. Once downloaded, locate the `.exe` file `Blackjack.exe` in your Downloads folder.</p>
-        <p style="margin-bottom: 1rem;">4. Double-click the `.exe` file to run the application.</p>
-        <p><i>Note: This executable is self-contained and does not require you to install Java separately.</i></p>
-    </div>
-</section>
-
-    <section class = "testimonials" id = "testimonials">
-        <div class = "testimonials-box">
-            <h2 class = "heading">Testimonials</h2>
-
-            <div class = "wrapper">
-                <div class="testimonial-item">
-                    <img src = "Images/RatingsOne.jpg" alt="person-one" />
-                    <h2>John</h2>
-                    <div class = "rating">
-                        <i class = 'bx bxs-star' id = "star"></i>
-                        <i class = 'bx bxs-star' id = "star"></i>
-                        <i class = 'bx bxs-star' id = "star"></i>
-                        <i class = 'bx bxs-star' id = "star"></i>
-                        <i class = 'bx bxs-star' id = "star"></i>
-
-                    </div>
-                    <p>"Tyler's work on our project was exceptional. His attention to detail and innovative solutions made a significant impact on our success."</p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src = "Images/RatingsTwo.jpg" alt="person-two" />
-                    <h2>Michelle</h2>
-                    <div class = "rating">
-                        <i class = 'bx bxs-star' id = "star"></i>
-                        <i class = 'bx bxs-star' id = "star"></i>
-                        <i class = 'bx bxs-star' id = "star"></i>
-                        <i class = 'bx bxs-star' id = "star"></i>
-                        <i class = 'bx bxs-star' id = "star"></i>
-
-                    </div>
-                    <p>Tyler's work increased our business by over 25% since the implementation of the website! I Would highly recommend him for his expertise and knowledge!</p>
+            <div class="service-box">
+                <div class="service-info">
+                    <a href="#contact" style="text-decoration: none; color: inherit;">
+                        <h4>Contact</h4>
+                        <p>Interested in working together? Click here to get in touch.</p>
+                    </a>
                 </div>
             </div>
         </div>
-        </section>
-        
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
+    </section>
 
-            <form action="send_email.php" method="POST" id="contactForm">
-                <div class="input-group">
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name" name="full_name" required>
-                        <input type="email" placeholder="Email Address" name="email_address" required>
-                    </div>
+    <!-- PROJECTS -->
+    <section class="services" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
 
-                    <div class="input-box">
-                        <input type="text" placeholder="Phone Number" name="phone_number">
-                        <input type="text" placeholder="Subject" name="subject" required>
-                    </div>
+        <div class="services-container">
+
+            <!-- GREENPEAKS -->
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>GreenPeaks</h4>
+                    <p>
+                        An AI-powered plant identification app built as a full-stack project.
+                        Currently in alpha testing for iOS.
+                    </p>
+
+                    <a href="https://testflight.apple.com/join/7TGMgXuf" target="_blank" class="btn">
+                        Join iOS Alpha Test
+                    </a>
+
+                    <p><i>Android version coming soon.</i></p>
                 </div>
-
-                <div class="input-group-2">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message Here" required></textarea>
-
-                    <input type="text" name="hp_field" style="display:none;" tabindex="-1" autocomplete="off">
-
-                    <input type="submit" value="Send Message" class="btn">
-                </div>
-            </form>
-        </section>
-
-        <footer class = "footer">
-            <div class = "social">
-                <a href="#"><i class = 'bx bxl-linkedin'></i></a>
-                <a href="#"><i class = 'bx bxl-github'></i></a>
-
             </div>
 
-            <ul class = "list">
-                <li>
-                    <a href = "#">FAQ</a>
-                </li>
+            <!-- BLACKJACK -->
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Blackjack True Count Application</h4>
+                    <p>
+                        A Java desktop application for tracking blackjack true count values.
+                    </p>
 
-                <li>
-                    <a href = "#">Services</a>
-                </li>
+                    <a href="/apps/Blackjack.exe" download class="btn">
+                        Download App (Windows)
+                    </a>
+                </div>
+            </div>
 
-                <li>
-                    <a href = "#">About Me</a>
-                </li>
+        </div>
+    </section>
 
-                <li>
-                    <a href = "#">Contact</a>
-                </li>
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
 
-                <li>
-                    <a href = "#">Testimonials</a>
-                </li>
+        <form id="contactForm" onsubmit="sendEmail(event)">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" id="full_name" required>
+                    <input type="email" placeholder="Email Address" id="email_address" required>
+                </div>
 
-            </ul>
-            <p class = "copyright">© 2025 Tyler Hubbell. All rights reserved.</p>
+                <div class="input-box">
+                    <input type="text" placeholder="Phone Number" id="phone_number">
+                    <input type="text" placeholder="Subject" id="subject" required>
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message Here" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/tyler-h-5b65b6346/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Hubbell315" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <p class="copyright">© 2026 Tyler Hubbell. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>

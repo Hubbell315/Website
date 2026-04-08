@@ -4,23 +4,49 @@ let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-    sections.forEach(section => { // Changed 'sec' to 'section'
+    sections.forEach(section => {
         let top = window.scrollY;
-        let offset = section.offsetTop - 150; // Changed 'sec' to 'section'
-        let height = section.offsetHeight; // Changed 'sec' to 'section'
-        let id = section.getAttribute('id'); // Changed 'sec' to 'section'
+        let offset = section.offsetTop - 150;
+        let height = section.offsetHeight;
+        let id = section.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(link => { // Changed 'links' to 'link'
-                link.classList.remove('active'); // Changed 'links' to 'link'
-            }); // Added closing parenthesis for navLinks.forEach
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
             document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
         }
-    }); // Added closing parenthesis for sections.forEach
-}; // Added semicolon at the end of the window.onscroll assignment
+    });
+};
 
-menuIcon.onclick = () => { // Changed 'onClick' to 'onclick' (case sensitivity)
+menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
 
+/* =========================
+   EMAIL FUNCTION (NEW)
+   ========================= */
+
+function sendEmail(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("full_name").value;
+    const email = document.getElementById("email_address").value;
+    const phone = document.getElementById("phone_number").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const body = `
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+
+Message:
+${message}
+    `;
+
+    const mailtoLink = `mailto:tylerhubbell315@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+}
